@@ -37,10 +37,11 @@
       "streetsidesoftware.code-spell-checker"
       "oderwat.indent-rainbow"
       "aaron-bond.better-comments"
-      "Hamza-Aziane.obsidian-dark"
       "RooVeterinaryInc.roo-cline"
       "ms-azuretools.vscode-containers"
       "tamasfe.even-better-toml"
+      "ahmadawais.shades-of-purple"
+      "google.geminicodeassist"
     ];
     # Enable previews
     previews = {
