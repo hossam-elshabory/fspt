@@ -9,6 +9,7 @@
     pkgs.python312Packages.pip
     pkgs.pipx
     pkgs.tree
+    pkgs.nodejs
   ];
   # Sets environment variables in the workspace
   env = { };
