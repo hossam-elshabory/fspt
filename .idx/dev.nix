@@ -42,7 +42,7 @@
       "ms-azuretools.vscode-containers"
       "tamasfe.even-better-toml"
       "ahmadawais.shades-of-purple"
-      "google.geminicodeassist"
+      # "google.geminicodeassist"
     ];
     # Enable previews
     previews = {
