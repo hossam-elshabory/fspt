@@ -1,4 +1,4 @@
-<h1 align="center">Firebase Studio Python Dev Template</h1>
+<h1 align="center">Firebase Studio Python Development Template (FSPT)</h1>
 
 <p align="center">
 <img src="https://img.shields.io/static/v1?label=Firebase+Studio&labelColor=000000&message=Python&color=0060ff&logo=firebase&logoColor=ff6e00&style=flat" alt="firebase"/>
@@ -16,8 +16,18 @@
 
 ## Introduction
 
+**FSPT** (Firebase Studio Python Dev Template) is a comprehensive, pre-configured development environment template designed for Python developers working with Google Firebase Studio. This template streamlines your development workflow by providing all essential tools, dependencies, and VS Code extensions out of the box, powered by Nix for reproducible environments.
+
 ## Features
-This template provides a pre-configured development environment for Python projects, powered by Nix. It includes essential tools and VS Code extensions to streamline your workflow.
+
+This template provides a pre-configured development environment for Python projects, optimized for Firebase development. It includes essential tools and VS Code extensions to streamline your workflow:
+
+- **Reproducible Environment:** Powered by Nix for consistent development across different machines
+- **Pre-configured Python Setup:** Python 3.11 with pip and pipx ready to use
+- **Development Tools:** Poetry for dependency management and Commitizen for conventional commits
+- **AI Development:** Configured for Google Gemini and AI-powered development workflows
+- **Comprehensive VS Code Integration:** Automated installation of recommended extensions
+- **Firebase-Ready:** Optimized configuration for Firebase Studio integration
 
 ### Included Packages
 
@@ -32,7 +42,6 @@ The following core packages are installed in your development environment:
 ### VS Code Extensions
 
 The following VS Code extensions are highly recommended and will be installed automatically upon workspace creation to enhance your development experience:
-
 
 | Extension ID                            | Description                         |
 | :-------------------------------------- | :---------------------------------- |
@@ -72,7 +81,7 @@ When a new workspace is created from this template, the following setup steps ar
 *   **Setting up Dev Environment:** Installs `poetry` and `commitizen` (with `cz-conventional-gitmoji`) using `pipx`, and ensures `pipx` is in your PATH.
 *   **Setup Virtual Environment:** Creates a Python virtual environment (`.venv`) and activates it.
 *   **Add VS Code to .gitignore:** Adds `.vscode/` to your `.gitignore` file if it's not already present.
-*   **Remove Template Artifacts:** Cleans up template-specific files like `.git` and `README.md`.
+*   **Remove Template Artifacts:** Cleans up template-specific files like `.git` and `README.md` to prepare for your project.
 
 ## Using this Repository as a Template
 
@@ -82,18 +91,33 @@ This repository is designed to be easily used as a template for new Firebase Stu
 
 1.  **In Firebase Studio:** Create a new workspace.
 2.  **Select "Import from Git":** Choose this option when prompted for a template.
-3.  **Enter Repository URL:** Use `https://github.com/firebase/firebase-studio-python-template` as the source.
+3.  **Enter Repository URL:** Use `https://github.com/hossam-elshabory/fspt` as the source.
 
 Firebase Studio will then automatically set up your Python development environment, including all recommended VS Code extensions and tools.
 
 ### Detailed Steps
 
-1.  **Open Firebase Studio:** Navigate to your Firebase Studio dashboard.
+1.  **Open Firebase Studio:** Navigate to your [Firebase Studio dashboard](https://studio.firebase.google.com/).
 2.  **Initiate New Workspace Creation:** Click on the option to create a new workspace or project.
 3.  **Choose Git Import:** When presented with template options, select "Import from Git" or a similar option that allows you to specify a Git repository.
 4.  **Provide Repository URL:** In the field for the repository URL, paste the following:
-    `https://github.com/firebase/firebase-studio-python-template`
-    (Note: This repository must be publicly accessible for Firebase Studio to clone it.)
+    `https://github.com/hossam-elshabory/fspt`
+    (Note: This repository is publicly accessible for Firebase Studio to clone it.)
 5.  **Confirm and Create:** Follow any remaining prompts to confirm the creation of your new workspace.
 
 Once created, Firebase Studio will clone this template, and the `OnCreate` hooks defined in `dev.nix` will automatically configure your development environment, installing necessary Python packages and VS Code extensions.
+
+## Topics
+This repository covers the following areas:
+- AI Development
+- Firebase & Firebase Studio
+- Google Cloud & Gemini
+- Python Development
+
+## License
+
+This project is open source and available to the community.
+
+## Support
+
+For issues, questions, or contributions, please visit the [repository](https://github.com/hossam-elshabory/fspt) and open an issue or pull request.
