@@ -31,14 +31,14 @@
       "ms-toolsai.jupyter-renderers"
       "ms-toolsai.vscode-jupyter-cell-tags"
       "ms-toolsai.vscode-jupyter-slideshow"
-      "saoudrizwan.claude-dev"
+      # "saoudrizwan.claude-dev"
       "codezombiech.gitignore"
       "luma.jupyter"
       "usernamehw.errorlens"
       "streetsidesoftware.code-spell-checker"
       "oderwat.indent-rainbow"
       "aaron-bond.better-comments"
-      "RooVeterinaryInc.roo-cline"
+      # "RooVeterinaryInc.roo-cline"
       "ms-azuretools.vscode-containers"
       "tamasfe.even-better-toml"
       "ahmadawais.shades-of-purple"
@@ -79,12 +79,13 @@
         #   fi
         # '';
         setting-up-dev-env = ''
-          pipx install poetry
           pipx install uv
           pipx install commitizen
           pipx inject commitizen cz-conventional-gitmoji
 
           pipx ensurepath
+
+          npm install -g @google/gemini-cli
         '';
         # add-vscode-to-gitignore = ''
         #   # Add .vscode/ to .gitignore if it's not already there
