@@ -86,6 +86,8 @@
           pipx ensurepath
 
           npm install -g @google/gemini-cli
+
+          gemini extensions install https://github.com/josstei/maestro-gemini
         '';
         # add-vscode-to-gitignore = ''
         #   # Add .vscode/ to .gitignore if it's not already there
